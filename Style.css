@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #120222;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ac02ce;
+  border-radius: 2px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(110grad, #4f0b8f, #a340ff, #8121db, #f7fc79);
+  background-size: 200%, 200%;
+  animation: colors 20s ease-in infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+a {
+  color: (#fff);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.header {
+  filter: drop-shadow(0px 12px 5px #39016d);
+  color: #f7fc79;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  color: #f7fc79;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  filter: drop-shadow(0px 1px 5px #f5fc9267);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #120222;
+  height: 8vh;
+  width: 120vh;
+}
+
+main {
+  background: no-repeat center center;
+  background-size: cover;
+  height: 10vh;
+}
+
+.lista {
+  color: #ffffff;
+  list-style: none;
+  display: flex;
+}
+
+.lista li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+  .conteudo {
+    background-size: 400% 400%;
+  }
+
+  .menu {
+    justify-content: space-between;
+  }
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+.menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+}
+
+.main-login {
+  align-items: center;
+}
+
+.main-login {
+  width: 70vw;
+  height: 70vh;
+  background-color: #120222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 10px 40px #1e013a;
+}
+
+.Llogin {
+  width: 50vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Llogin > h1 {
+  color: #f6ff00;
+  font-size: 3vh;
+  justify-content: flex-end;
+  align-items: center;
+  filter: drop-shadow(0px 2px 5px #f8fc7988);
+}
+
+.img {
+  width: 25vw;
+}
+
+.Rlogin {
+  width: 50vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.card-login {
+  width: 60%;
+  height: 45%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+  background: #39016d;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #2d0157;
+}
+
+.card-login > h1 {
+  color: #f6ff00;
+  font-weight: 800;
+  margin: 0;
+}
+
+.textfield {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px 0px;
+}
+
+.textfield > input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #130025;
+  color: #fff;
+  font-size: 12pt;
+  box-shadow: 0px 5px 15px #2d0157;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield > label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+  color: #696969;
+}
+
+.btn-login {
+  width: 50%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #39016d;
+  background: #f6ff00;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #f7fc79;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-login {
+    flex-direction: column;
+  }
+
+  .Llogin > h1 {
+    display: none;
+  }
+}
+
+.quem-somos {
+  margin-top: 8vh;
+  margin-bottom: 30vh;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 70vh;
+  background-color: #120222;
+
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 10px 40px #1e013a;
+}
+.quem-somos > h1 {
+  margin-top: 20px;
+  color: #f6ff00;
+  filter: drop-shadow(2px 2px 50px #ff01dd);
+}
+
+.card-1 {
+  margin-right: 30px;
+  margin-top: 15px;
+  background: #27014d;
+  width: 25vw;
+  height: 50vh;
+  border: none;
+  border-radius: 500px;
+  padding: 0px;
+  filter: drop-shadow(-9px 9px 10px #b304e993);
+  display: flex;
+  justify-content: center;
+}
+
+.card-1 .gust {
+  background-image: url(Imagens/gust.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%; 
+  height: 97%; 
+}
+
+.card-2 {
+  margin-left: 30px;
+  margin-top: 15px;
+  background: #27014d;
+  width: 25vw;
+  height: 50vh;
+  border: none;
+  border-radius: 15px;
+  padding: 0px;
+  filter: drop-shadow(9px 9px 10px #b304e993);
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+ 
+}
+h4{
+  
+  color: #f6ff00;
+  letter-spacing: 1px;
+  font-size: 12pt;
+  font-weight: lighter;
+  text-align: center;
+  filter: drop-shadow(0px 0px 10px #f6ff009d);
+  
+
+}
+
+
+.cards {
+  display: flex;
+}
+
+h3 {
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 12pt;
+}
+
+.footer {
+  margin-top: 31vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  width: 72vw;
+  height: 70vh;
+  background-color: #120222;
+  border: none;
+  box-shadow: 0px 10px 40px #1e013a;
+  position: relative;
+  bottom: 0;
+  padding: 25px 180px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista2 {
+  color: #ffffff;
+  list-style: none;
+  display: flex;
+  letter-spacing: 3px;
+}
+
+.lista .li {
+  justify-content: space-around;
+}
+.footer .footer-right .lista li {
+  padding-top: 20px;
+}
+
+.gust {
+  margin-bottom: 20px;
+  width: 53vh;
+  height: 56vh;
+}
